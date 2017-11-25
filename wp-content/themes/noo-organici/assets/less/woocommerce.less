@@ -3687,9 +3687,9 @@ div.product-style2{
       .noo-product-thumbnail{
         border-bottom: 1px solid @gray-gold;
         .transition(all 0.6s ease 0s);
-        .noo-rating{
-          margin-bottom: 27px;
-        }
+      }
+      .noo-rating{
+        margin-bottom: 5px;
       }
       .noo-product-title {
         padding: 29px 10px 15px;
@@ -4139,7 +4139,7 @@ input[type='checkbox']{
         border-color: @brand-primary;
         .noo-product-thumbnail{
           img{
-            .scale(1.1);
+            .scale(1.02);
           }
         }
         .noo-product-title .noo-product-action{
@@ -4148,28 +4148,33 @@ input[type='checkbox']{
       }
     }
     .noo-product-thumbnail{
+      height: 200px;
       position: relative;
       overflow: hidden;
       text-align: center;
       background: @white;
-      img{
+      margin: 10px 10px 15px;
+
+      img {
+        width: auto;
+        max-height: 100%;
         .transition(all 0.6s ease 0s);
       }
-      .noo-rating{
-        text-align: center;
-        .star-rating{
-          display: inline-block;
-          letter-spacing: 7px;
-          width: 105px;
-          margin: 0;
-          &:before{
-            color: @coral;
-          }
-          span{
-            color: @coral;
-            strong{
-              display: none;
-            }
+    }
+    .noo-rating{
+      text-align: center;
+      .star-rating{
+        display: inline-block;
+        letter-spacing: 7px;
+        width: 105px;
+        margin: 0;
+        &:before{
+          color: @coral;
+        }
+        span{
+          color: @coral;
+          strong{
+            display: none;
           }
         }
       }
@@ -4185,20 +4190,33 @@ input[type='checkbox']{
       }
       h3{
         font-family: @font-family-sans-serif;
-        font-size: @font-size-h4;
+        font-size: @font-size-h5;
         font-weight: 700;
         text-transform: uppercase;
-        margin: 0;
-        padding: 0;
+        margin: 0 0 10px;
+        padding: 0 7px;
+        height: 50px;
+        overflow: hidden;
 
+        a:hover {
+          color: @gray-base;
+        }
       }
       .price{
         color: @text-color;
-        margin-top: 10px;
-        display: inline-block;
         font-weight: 700;
-        margin-bottom: 15px;
-        font-size: 14px;
+        margin-bottom: 10px;
+        height: 20px;
+        line-height: 20px;
+
+        ins {
+          text-decoration: none;
+
+          .amount {
+            color: red;
+            font-size: 18px;
+          }
+        }
       }
       .noo-product-action{
         background: @brand-primary;
@@ -4271,10 +4289,11 @@ input[type='checkbox']{
     }
     .noo-product-inner{
       .clearfix;
+      .transition(all 0.25s ease 0s);
       border: 1px solid @gray-gold;
-      .transition(all 0.6s ease 0s);
       position: relative;
       margin: 15px 0;
+
       &:hover{
         .box-shadow(0 0 29px 0 fade(@black,18));
         .noo-link-thumbail{
@@ -4302,26 +4321,24 @@ input[type='checkbox']{
           max-height: 200px;
           .transition(all 0.6s ease 0s);
         }
-        .noo-rating{
-          position: absolute;
-          left: 0;
-          bottom: 30px;
-          width: 100%;
-          text-align: center;
-          .star-rating{
-            display: inline-block;
-            letter-spacing: 7px;
-            width: 105px;
-            margin: 0;
-            &:before{
-              color: @coral;
-            }
-            span{
-              color: @coral;
-              strong{
-                display: none;
-              }
-            }
+      }
+    }
+    .noo-rating{
+      width: 100%;
+      text-align: center;
+
+      .star-rating{
+        display: inline-block;
+        letter-spacing: 7px;
+        width: 105px;
+        margin: 0;
+        &:before{
+          color: @coral;
+        }
+        span{
+          color: @coral;
+          strong{
+            display: none;
           }
         }
       }
@@ -4576,21 +4593,6 @@ input[type='checkbox']{
   .clearfix;
 }
 .single-product{
-  .noo-main.noo-md-9{
-    .product-grid{
-      .masonry-item{
-        &:nth-child(4){
-          clear: both;
-        }
-        &:nth-child(7){
-          clear: both;
-        }
-        &.first{
-          clear: none;
-        }
-      }
-    }
-  }
   div.product{
     .clearfix;
     .images{

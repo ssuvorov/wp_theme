@@ -134,7 +134,7 @@ p.demo_store,
 			}
 
 			del {
-				opacity: 0.5;
+				color: #999;
 			}
 		}
 
@@ -491,8 +491,8 @@ p.demo_store,
 		position: absolute;
 		text-align: center;
 		line-height: 3.236;
-		top: -0.5em;
-		left: -0.5em;
+		top: -1em;
+		left: -1em;
 		margin: 0;
 		border-radius: 100%;
 		background-color: $highlight;

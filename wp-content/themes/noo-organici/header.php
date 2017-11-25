@@ -20,9 +20,10 @@ elseif ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) :
     endif;
 endif;
 ?>
+
 <?php wp_head(); ?>
-<link href='http://stage.lavegando.com:81/wp-content/themes/noo-organici/assets/css.css' rel='stylesheet' type='text/css'>
-<link href='http://stage.lavegando.com:81/wp-content/themes/noo-organici/assets/css/component.css' rel='stylesheet' type='text/css'>
+<link href='wp-content/themes/noo-organici/assets/css.css' rel='stylesheet' type='text/css'>
+<link href='wp-content/themes/noo-organici/assets/css/component.css' rel='stylesheet' type='text/css'>
 </head>
 <body <?php body_class(); ?>>
     <?php $loading = noo_organici_get_option('noo_css_loading',1);
@@ -38,14 +39,14 @@ endif;
 	<div class="site">
     <div class="social_icon">
     <div class="socialicon">
-    
+
     <ul>
-      
+
     <li><a href="#"><img style='width:100%;' border="0"style='width:100%;' border="0"  src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/fb_icon.png"></a></li>
      <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/g_bg.png"></a></li>
      <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/p_bg.png"></a></li>
      <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/r_bg.png"></a></li>
-    <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/t_bg.png"></a></li> 
+    <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/t_bg.png"></a></li>
 <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/in_bg.png"></a></li>
 <li><a href="#"><img src="http://stage.lavegando.com:81/wp-content/uploads/2015/12/youtube.png"></a></li>
 <li><a href="#"><div class="language_switcher"><?php dynamic_sidebar('[smk_sidebar_3w0z]');?>
@@ -56,13 +57,12 @@ endif;
 </ul>
     </div>
 
-  
-    
+
+
     </div>
-    
-	
+
+
 	<?php noo_organici_get_layout('navbar'); ?>
     <?php noo_organici_get_layout( 'heading' ); ?>
-	
-	
- 
+
+

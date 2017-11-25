@@ -1,41 +1,7 @@
-function noo_masonry(){
-
-    "use strict";
-
-    var $container = jQuery('.noo-product-grid');
-    $container.imagesLoaded(function(){
-        $container.isotope({
-            itemSelector : '.masonry-item',
-            transitionDuration : '0.8s',
-            masonry : {
-                'gutter' : 0
-            }
-        });
-
-    });
-}
-function noo_masonry2(){
-    "use strict";
-
-    var $container2 = jQuery('.noo-product-masonry');
-    $container2.imagesLoaded(function(){
-        $container2.isotope({
-            itemSelector : '.product-masonry',
-            transitionDuration : '0.8s',
-            masonry : {
-                'gutter' : 0
-            }
-        });
-
-    });
-}
 jQuery(document).ready(function(){
-
     "use strict";
-    noo_masonry2();
     var $container = jQuery('.noo-product-grid');
     //Init masonry isotope
-    noo_masonry();
     var $filter = jQuery('.masonry-filters a');
     $filter.click(function(e){
         e.stopPropagation();
@@ -61,15 +27,5 @@ jQuery(document).ready(function(){
     });
 
 });
-jQuery(window).resize('load resize',function(){
-    "use strict";
-    noo_masonry();
-    noo_masonry2();
-});
 
-jQuery(document).on('noo-layout-changed', function() {
-    "use strict";
-    noo_masonry();
-    noo_masonry2();
-});
 

@@ -396,11 +396,9 @@ if ( class_exists( 'woocommerce' ) ) {
     function noo_organici_template_loop_product_thumbnail() {
         ?>
             <div class="noo-product-thumbnail">
-                <?php
-                    the_post_thumbnail('lager');
-                    wc_get_template_part('loop/rating');
-                ?>
+                <?php the_post_thumbnail('lager'); ?>
             </div>
+            <?php wc_get_template_part('loop/rating'); ?>
         <?php
     }
 

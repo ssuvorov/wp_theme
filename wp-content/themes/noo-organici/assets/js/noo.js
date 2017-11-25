@@ -309,10 +309,10 @@
 			}, 900, 'easeInOutExpo');
 		});
 	
-		$('body').on('mouseleave ', '.masonry-style-elevated .masonry-portfolio.no-gap .masonry-item', function(){
-			$(this).closest('.masonry-container').find('.masonry-overlay').hide();
-			$(this).removeClass('masonry-item-hover');
-		});
+		// $('body').on('mouseleave ', '.masonry-style-elevated .masonry-portfolio.no-gap .masonry-item', function(){
+		// 	$(this).closest('.masonry-container').find('.masonry-overlay').hide();
+		// 	$(this).removeClass('masonry-item-hover');
+		// });
 
 		if($('.masonry.noo-category-featured').length){
 			$('.masonry.noo-category-featured').each(function(){

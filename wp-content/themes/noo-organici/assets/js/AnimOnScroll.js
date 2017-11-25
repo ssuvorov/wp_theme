@@ -69,7 +69,9 @@
 		return a;
 	}
 
-	function AnimOnScroll( el, options ) {	
+	function AnimOnScroll( el, options ) {
+		if (!el) return;
+
 		this.el = el;
 		this.options = extend( this.defaults, options );
 		this._init();
@@ -100,7 +102,7 @@
 					itemSelector: 'li',
 					transitionDuration : 0
 				} );
-				
+
 				if( Modernizr.cssanimations ) {
 					// the items already shown...
 					self.items.forEach( function( el, i ) {
@@ -154,15 +156,15 @@
 			this.didScroll = false;
 		},
 		_resizeHandler : function() {
-			var self = this;
-			function delayed() {
-				self._scrollPage();
-				self.resizeTimeout = null;
-			}
-			if ( this.resizeTimeout ) {
-				clearTimeout( this.resizeTimeout );
-			}
-			this.resizeTimeout = setTimeout( delayed, 1000 );
+			// var self = this;
+			// function delayed() {
+			// 	self._scrollPage();
+			// 	self.resizeTimeout = null;
+			// }
+			// if ( this.resizeTimeout ) {
+			// 	clearTimeout( this.resizeTimeout );
+			// }
+			// this.resizeTimeout = setTimeout( delayed, 1000 );
 		},
 		_checkTotalRendered : function() {
 			++this.itemsRenderedCount;

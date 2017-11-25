@@ -148,12 +148,14 @@
 <?php wp_footer(); ?>
 <?php if(!is_page(1339)): ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.custom.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/masonry.pkgd.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/imagesloaded.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/classie.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/AnimOnScroll.js"></script>
 <script>
-	new AnimOnScroll( document.getElementById( 'grid' ), {
+const $grid = document.getElementById( 'grid' )
+if (!$grid) return;
+
+	new AnimOnScroll( $grid, {
 		minDuration : 0.4,
 		maxDuration : 0.7,
 		viewportFactor : 0.2
