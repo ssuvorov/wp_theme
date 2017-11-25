@@ -1,0 +1,125 @@
+.noo-slider{
+	position: relative;
+	.caroufredsel_wrapper{
+		position: relative;
+		.sliders{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			.slide-item{
+				float: left;
+				position: relative;
+				height: auto;
+				width: 100%;
+				img{
+					display: block;
+					max-width: 100%;
+					width: 100%;
+				}
+				.container-boxed {
+					position: relative;
+					display: block;			
+				}
+				
+			}
+		}
+	}
+	.slider-timer{
+		background: none repeat scroll 0 0 #EFEDED;
+	    height: 2px;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	}
+	.slider-indicators{
+		position: absolute;
+		bottom: 24px;
+	    left: 50%;
+	    .translate(-50%, 0);
+		a{
+			.transition(all 0.4s ease 0s);
+			background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+		    display: inline-block;
+		    height: 10px;
+		    width: 10px;
+		    text-indent: -999em;
+		    .border-radius(50%);
+		    float: left;
+		    margin: 0 10px;
+		    &.selected,
+		    &:hover{
+		      background-color: @brand-primary;
+	          .box-shadow(0 0px 3px 1px rgba(0, 0, 0, 0.24));
+	          .scale(1.6);
+		    }
+		}
+
+	}
+	&.top-indicators{
+		//padding-top: 15px;
+	}
+	&.bottom-indicators{
+		padding-bottom: 15px;
+		.slider-indicators{
+		    right: auto;
+		    top: auto;
+		    bottom: 0;
+		    left: 50%;
+		    .translate(-50%,0);
+		}
+	}
+
+	.slider-control{
+		display: none !important;
+		font-size: 30px;
+	    color: @white;
+	    .opacity(0.7);
+	    position: absolute;
+	    left: 0;
+	    background: @brand-primary;
+	    top: 50%;
+	    .translate(0,-50%);
+	    padding: 0 17px;
+	    .transition(all 0s ease 0s);
+	    z-index: 1000;
+		&.prev-btn {
+			.slider-icon-prev{
+				&:before{
+					content: "\f104";
+					position: relative;
+					display: inline-block;
+					font-family: "fontawesome";
+					font-style: normal;
+					font-weight: normal;
+					text-decoration: inherit;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					speak: none;
+				}
+			}
+		}
+		&.next-btn {
+			right: 0;
+			left: auto;
+			.slider-icon-next{
+				&:before{
+					content: "\f105";
+					position: relative;
+					display: inline-block;
+					font-family: "fontawesome";
+					font-style: normal;
+					font-weight: normal;
+					text-decoration: inherit;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					speak: none;
+				}
+			}
+			
+		}
+		&:hover{
+			.opacity(.9);
+		}
+	}
+}
+

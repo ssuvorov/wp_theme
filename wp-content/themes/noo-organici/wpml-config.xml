@@ -1,0 +1,79 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">_heading_image</custom-field>
+        <custom-field action="copy">_noo_wp_page_menu_transparent</custom-field>
+        <custom-field action="copy">_noo_wp_page_menu_transparent_logo</custom-field>
+        <custom-field action="copy">_noo_wp_page_hide_page_title</custom-field>
+        <custom-field action="copy">_noo_wp_page_sidebar</custom-field>
+        <custom-field action="copy">_noo_wp_post_video_embed</custom-field>
+        <custom-field action="copy">_noo_wp_post_video_ratio</custom-field>
+        <custom-field action="copy">_noo_wp_post_video_preview</custom-field>
+        <custom-field action="copy">_noo_wp_post_audio_embed</custom-field>
+        <custom-field action="translate">_noo_wp_post_quote</custom-field>
+        <custom-field action="translate">_noo_wp_post_quote_citation</custom-field>
+        <custom-field action="copy">_noo_wp_post_link</custom-field>
+        <custom-field action="copy">_noo_wp_post_global_setting</custom-field>
+        <custom-field action="copy">_noo_wp_post_override_layout</custom-field>
+        <custom-field action="copy">_noo_wp_post_layout</custom-field>
+        <custom-field action="copy">_noo_wp_post_sidebar</custom-field>
+
+        <custom-field action="copy">_heading_image</custom-field>
+        <custom-field action="copy">_noo_wp_page_header_style</custom-field>
+        <custom-field action="copy">_noo_wp_page_footer_style</custom-field>
+        <custom-field action="copy">_noo_wp_page_menu_logo</custom-field>
+        <custom-field action="copy">_noo_wp_page_nav_position</custom-field>
+        <custom-field action="copy">_noo_wp_page_menu_logo_sticky</custom-field>
+
+        <custom-field action="copy">_noo_wp_post_meta_box_gallery</custom-field>
+        <custom-field action="copy">_noo_wp_post_gallery</custom-field>
+        <custom-field action="copy">_noo_wp_post_gallery_preview</custom-field>
+        <custom-field action="copy">_noo_wp_post_meta_box_video</custom-field>
+        <custom-field action="copy">_noo_wp_post_video_embed</custom-field>
+        <custom-field action="copy">_noo_wp_post_video_ratio</custom-field>
+        <custom-field action="copy">_noo_wp_post_video_preview</custom-field>
+        <custom-field action="copy">_noo_wp_post_meta_box_audio</custom-field>
+        <custom-field action="copy">_noo_wp_post_audio_embed</custom-field>
+        <custom-field action="translate">_noo_wp_post_meta_box_quote</custom-field>
+        <custom-field action="translate">_noo_wp_post_quote</custom-field>
+        <custom-field action="translate">_noo_wp_post_quote_citation</custom-field>
+        <custom-field action="translate">_noo_wp_post_quote_alias</custom-field>
+        <custom-field action="copy">_noo_wp_post_meta_box_link</custom-field>
+        <custom-field action="copy">_noo_wp_post_meta_box_single_page</custom-field>
+        <custom-field action="copy">_noo_wp_post_global_setting</custom-field>
+        <custom-field action="copy">_noo_wp_post_override_layout</custom-field>
+        <custom-field action="copy">_noo_wp_post_layout</custom-field>
+        <custom-field action="copy">_noo_wp_post_sidebar</custom-field>
+
+        <custom-field action="copy">_noo_wp_testimonial_image</custom-field>
+        <custom-field action="translate">_noo_wp_testimonial_name</custom-field>
+        <custom-field action="translate">_noo_wp_testimonial_position</custom-field>
+
+        <custom-field action="copy">_noo_wp_farmer_image</custom-field>
+        <custom-field action="translate">_noo_wp_farmer_name</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_facebook</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_twitter</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_google</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_linkedin</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_flickr</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_pinterest</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_instagram</custom-field>
+        <custom-field action="copy">_noo_wp_farmer_tumblr</custom-field>
+        
+        <custom-field action="copy">_noo_wp_product_override_layout</custom-field>
+        <custom-field action="copy">_noo_wp_product_layout</custom-field>
+        <custom-field action="copy">_noo_wp_product_sidebar</custom-field>
+        
+
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">testimonial</custom-type>
+        <custom-type translate="1">farmer</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">testimonial_category</taxonomy>
+        <taxonomy translate="1">farmer_category</taxonomy>
+        <taxonomy translate="1">product_boxed</taxonomy>
+    </taxonomies>
+</wpml-config>
+
+

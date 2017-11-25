@@ -1,0 +1,17 @@
+diff a/wp-content/themes/noo-organici/includes/woocommerce.php b/wp-content/themes/noo-organici/includes/woocommerce.php	(rejected hunks)
+@@ -97,9 +97,13 @@
+ 		if ( ! $content ) {
+ 			$output .= '<li id="nav-menu-item-cart" class="menu-item noo-menu-item-cart minicart"><a title="' .
+ 				 esc_html__( 'View cart', 'noo-organici' ) . '" class="cart-button" href="' . esc_url($woocommerce->cart->get_cart_url()) .
+-				 '">' . '<span class="cart-item' . esc_html($cart_has_items) . '"><i class="fa fa-shopping-cart"></i>';
++				 '">' . '<span class="cart-item' . esc_html($cart_has_items) . '">';
+ 			if ( $cart_count != "0" ) {
+-				$output .= "<span>(" . esc_html($cart_count) . ")</span> Items";
++				if ( !empty( $only_icon ) ) {
++					$output .= "<span>" . esc_html($cart_count) . "</span>";
++				} else {
++					$output .= "<span>(" . esc_html($cart_count) . ")</span> Items";
++				}
+ 			}
+ 			$output .= '</span>';
+ 			$output .= '</a>';

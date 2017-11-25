@@ -1,0 +1,78 @@
+@import "variables/variables-core.less";
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+@white:                   #fff;
+@black:                   #000;
+@gray-base:               #212121;
+@gray-darker:             lighten(@gray-base, 13.5%);
+@gray-dark:               lighten(@gray-base, 20%);
+@gray:                    lighten(@gray-base, 33.5%);
+@gray-light:              lighten(@gray-base, 46.7%);
+@gray-lighter:            lighten(@gray-base, 93.5%);
+@brand-primary:           #79cba8;
+@gray-gold:               #f4eede;
+@coral:                   #f5a64a;
+
+
+//** Background color for `<body>`.
+@body-bg:               @white;
+@body-bg-image:         "";
+@body-bg-repeat:        no-repeat;
+@body-bg-align:         left top;
+@body-bg-attachment:    fixed;
+@body-bg-cover:         auto;
+
+// Site layout
+@site-background:       #fff; // lighten(@gray-lighter, 5%);
+@site-box-shadow:       0 0 7px rgba(0, 0, 0, 0.4);
+@site-border-color:     #d5d5d5;
+@site-border-color-rgba: rgba(0, 0, 0, 0.275);
+@site-width:            90%;
+@site-max-width:        1200px;
+@site-featured-width:        1600px;
+
+
+//** Global text color on `<body>`.
+@text-color:              #696969;
+
+//** Global textual link color.
+@link-color:              @gray-base;
+//** Link hover color set via `darken()` function.
+@link-hover-color:        @brand-primary;
+
+
+//== Typography
+@font-family-sans-serif:  'Lato', sans-serif;
+
+@headings-font-family:    'Pacifico', cursive;
+
+@headings-font-weight:    400;
+@headings-line-height:    1.2;
+@headings-color:          @gray-base;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+
+// font weight
+@font-weight-small:       300;
+@font-weight-base:        400;
+@font-weight-semibold:    600;
+@font-weight-bold:        500;
+
+
+
+
