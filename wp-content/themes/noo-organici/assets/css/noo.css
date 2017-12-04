@@ -5996,15 +5996,11 @@ body.fixed_top .noo-header.header-5.eff .navbar-wrapper {
 .noo-page-heading .noo-page-breadcrumb span {
   margin: 0 3px;
 }
-.boxed-layout .page_fullwidth {
-  overflow: hidden;
-}
 /**
  * 4.2 Noo Box layout
  * -----------------------------------------------------------------------------
  */
 .boxed-layout {
-  background-color: #fff;
   background-image: url("");
   background-position: left top;
   background-repeat: no-repeat;
@@ -6015,8 +6011,6 @@ body.fixed_top .noo-header.header-5.eff .navbar-wrapper {
   position: relative;
   padding: 0;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
   width: 90%;
   max-width: 1200px;
 }
@@ -6024,6 +6018,12 @@ body.fixed_top .noo-header.header-5.eff .navbar-wrapper {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.noo-container .navbar-brand {
+  width: 155px;
+}
+.noo-container .navbar-brand .noo-logo-img {
+  width: 100%;
 }
 /* *
  * 4.3 Noo Images Grid
@@ -6660,12 +6660,11 @@ div.products-sh-title h4 {
   padding: 0;
 }
 .inheader-sh-title h2 {
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Pacifico', cursive;
+  color: #33bcac;
   margin: 12px 0 0 0;
   padding: 0;
-  font-size: 34px;
-  font-weight: 900;
+  font-size: 50px;
 }
 .inheader-sh-title .ds {
   margin: 15px 0 0 0;
@@ -7220,6 +7219,30 @@ div.products-sh-title h4 {
   content: '';
   right: -20px;
   top: 0;
+}
+.social_icon {
+  clear: both;
+  overflow: hidden;
+  padding: 5px 35px;
+  text-align: right;
+}
+.social_icon .socialicon ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.social_icon .socialicon ul li {
+  display: inline-block;
+  margin: 2px;
+  white-space: nowrap;
+}
+.social_icon .socialicon ul li a {
+  color: #c7d3dd;
+  font-size: 20px;
+}
+.social_icon .socialicon ul li a img {
+  height: auto;
+  max-width: 30px;
 }
 .noo-short-intro {
   position: relative;
@@ -7897,6 +7920,9 @@ div.blog-sh-title2 p {
 }
 .blog-item .blog-description .view-more i {
   padding-left: 5px;
+}
+body.boxed-layout {
+  background: #fff;
 }
 body.archive .blog-item,
 body.blog .blog-item {
@@ -10498,8 +10524,8 @@ div.product-style2 .product-grid .noo-product-inner:hover .noo-product-title .no
  * 4.26 Page Shop
  */
 @media (min-width: 992px) {
-  .first {
-    clear: both;
+  .noo-header.header-6 {
+    margin-top: 0;
   }
 }
 input[type='checkbox'] {
@@ -12690,7 +12716,13 @@ input[type='checkbox'] {
   line-height: 21px;
 }
 .noo-sh-mailchimp {
-  padding: 62px 0;
+  background: url("../images/sub_bg.png") 50% 50%;
+  width: 100%;
+  float: left;
+  padding: 20px 0;
+}
+.noo-sh-mailchimp .noo-mail-desc {
+  margin: 0;
 }
 .noo-sh-mailchimp .mc4wp-form.mc4wp-form-success .mc4wp-form-fields {
   display: none;
@@ -12698,13 +12730,10 @@ input[type='checkbox'] {
 .noo-sh-mailchimp .mc4wp-form.mc4wp-form-success .mc4wp-success {
   margin-top: 66px;
 }
-.noo-sh-mailchimp .mc4wp-form-fields {
-  margin-top: 30px;
-}
 .noo-sh-mailchimp .mc4wp-form-fields input[type="email"] {
   padding: 12px 20px;
   border: none;
-  width: 100%;
+  width: 70%;
   max-width: 532px;
 }
 .noo-sh-mailchimp .mc4wp-form-fields input[type="submit"] {
@@ -12714,9 +12743,6 @@ input[type='checkbox'] {
   color: #fff;
   padding: 12px 35px;
   margin-left: 10px;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
 }
 .noo-sh-mailchimp .mc4wp-form-fields input[type="submit"]:hover {
   background-color: #45b284;

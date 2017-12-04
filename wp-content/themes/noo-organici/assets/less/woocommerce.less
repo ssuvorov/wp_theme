@@ -1,3 +1,13 @@
+.noo-container {
+  .navbar-brand {
+    width: 155px;
+
+    .noo-logo-img {
+      width: 100%;
+    }
+  }
+}
+
 /* *
  * 4.3 Noo Images Grid
  */
@@ -569,12 +579,11 @@ div.products-sh-title{
     padding: 0;
   }
   h2{
-    font-family: @font-family-sans-serif;
-    text-transform: uppercase;
+    font-family: @headings-font-family;
+    color: #33bcac;
     margin: 12px 0 0 0;
     padding: 0;
-    font-size: 34px;
-    font-weight: 900;
+    font-size: 50px;
   }
   .ds{
     margin: 15px 0 0 0;
@@ -1079,6 +1088,36 @@ div.products-sh-title{
   }
 }
 
+.social_icon {
+  clear: both;
+  overflow: hidden;
+  padding: 5px 35px;
+  text-align: right;
+
+  .socialicon {
+    ul {
+      list-style: outside none none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 2px;
+        white-space: nowrap;
+
+        a {
+          color: #c7d3dd;
+          font-size: 20px;
+
+          img {
+            height: auto;
+            max-width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
 
 // short intro
 .noo-short-intro{
@@ -1708,6 +1747,9 @@ div.blog-sh-title2{
       }
     }
   }
+}
+body.boxed-layout {
+  background: #fff;
 }
 
 body.archive,
@@ -4100,8 +4142,8 @@ div.product-style2{
  * 4.26 Page Shop
  */
 @media ( min-width:  992px){
-  .first{
-    clear: both;
+  .noo-header.header-6 {
+    margin-top: 0;
   }
 }
 input[type='checkbox']{
@@ -6154,7 +6196,12 @@ input[type='checkbox']{
   }
 }
 .noo-sh-mailchimp{
-  padding: 62px 0;
+  background: url("../images/sub_bg.png") 50% 50%;
+  width: 100%;
+  float: left;
+  padding: 20px 0;
+
+  .noo-mail-desc { margin: 0; }
   .mc4wp-form{
     &.mc4wp-form-success{
       .mc4wp-form-fields{
@@ -6166,11 +6213,10 @@ input[type='checkbox']{
     }
   }
   .mc4wp-form-fields{
-    margin-top: 30px;
     input[type="email"] {
         padding: 12px 20px;
         border: none;
-        width: 100%;
+        width: 70%;
         max-width: 532px;
     }
     input[type="submit"] {
@@ -6180,7 +6226,6 @@ input[type='checkbox']{
       color: @white;
       padding: 12px 35px;
       margin-left: 10px;
-      .transition(all 0.4s ease 0s);
       &:hover{
         background-color: darken(@brand-primary, 15%);
       }

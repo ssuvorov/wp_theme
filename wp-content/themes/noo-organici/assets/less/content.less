@@ -73,12 +73,6 @@
     }
   }
 }
-.boxed-layout{
-  .page_fullwidth{
-    overflow: hidden;
-  }
-}
-
 
 
 /**
@@ -86,20 +80,20 @@
  * -----------------------------------------------------------------------------
  */
 .boxed-layout {
-  background-color: @body-bg;
   background-image: url("@{body-bg-image}");
   background-position: @body-bg-align;
   background-repeat: @body-bg-repeat;
   background-attachment: @body-bg-attachment;
   .background-cover( @body-bg-cover );
+
   .site {
     margin: 0 auto;
     position: relative;
     padding: 0;
     background-color: @white;
-    .box-shadow( @site-box-shadow );
     width: @site-width;
     max-width: unit( @site-max-width, px );
+
     .fixed_top{
       .navbar-wrapper{
         width: @site-width;

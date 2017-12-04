@@ -190,9 +190,9 @@
 
 
 .noo-header.header-6 .noo-main-menu.noo-left-menu > ul > li a,
-
-
-
+.noo-header.header-6 .noo-main-menu.noo-right-menu {
+    text-align: right;
+}
 .noo-header.header-6 .noo-main-menu.noo-right-menu > ul > li a {
 
 
@@ -2159,13 +2159,8 @@ body {
 
 
 #menu-main-menu-left, #menu-main-menu-right {
-
-
-
-    padding: 0 !important;
-
-
-
+    display: inline-block;
+    padding: 0;
 }
 
 

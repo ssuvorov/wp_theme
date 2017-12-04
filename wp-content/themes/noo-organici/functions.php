@@ -360,7 +360,7 @@ function noo_organici_custom_menu_item($items, $args){
     return $items;
 }
 
-function title_filter($where, &$wp_query){
+function title_filter($where, $wp_query){
     global $wpdb;
     if($search_term = $wp_query->get( 'title_filter' )){
         $search_term = $wpdb->esc_like($search_term); //instead of esc_sql()
